@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://LoseScreen.gd" type="Script" id=1]
+[ext_resource path="res://Paddle.png" type="Texture" id=2]
+[ext_resource path="res://Pixel TileSet.png" type="Texture" id=3]
+[ext_resource path="res://BreakoutImages/floor.png" type="Texture" id=4]
+
+[sub_resource type="ShaderMaterial" id=1]
+
+[node name="LoseScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 14.0
+text = "You Lose!"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 18.0
+margin_right = 1024.0
+margin_bottom = 18.0
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer"]
+margin_top = 22.0
+margin_right = 1024.0
+margin_bottom = 86.0
+texture_normal = ExtResource( 3 )
+texture_focused = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+show_behind_parent = true
+material = SubResource( 1 )
+position = Vector2( -952.404, -2635.28 )
+rotation = 0.486947
+scale = Vector2( 20, 20 )
+
+[node name="floor" type="Sprite" parent="Sprite"]
+position = Vector2( 132.947, 97.0526 )
+texture = ExtResource( 4 )
+[connection signal="pressed" from="VBoxContainer/TextureButton" to="." method="_on_TextureButton_pressed"]

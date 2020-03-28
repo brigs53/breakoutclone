@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/160213__qubodup__kicking-forcing-breaking-wooden-door.wav-9ff5dc3c55a4c7f1aead50729a81176c.sample"
+
+[deps]
+
+source_file="res://SFXs/160213__qubodup__kicking-forcing-breaking-wooden-door.wav"
+dest_files=[ "res://.import/160213__qubodup__kicking-forcing-breaking-wooden-door.wav-9ff5dc3c55a4c7f1aead50729a81176c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

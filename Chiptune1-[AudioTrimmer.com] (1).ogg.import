@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Chiptune1-[AudioTrimmer.com] (1).ogg-4b9f524b487a4493236ce965caa48104.oggstr"
+
+[deps]
+
+source_file="res://Chiptune1-[AudioTrimmer.com] (1).ogg"
+dest_files=[ "res://.import/Chiptune1-[AudioTrimmer.com] (1).ogg-4b9f524b487a4493236ce965caa48104.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
